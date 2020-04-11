@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ReviewsController < ApplicationController
   def create
     @cocktail = Cocktail.find(params[:cocktail_id])
@@ -7,7 +9,7 @@ class ReviewsController < ApplicationController
       redirect_to cocktail_path(@cocktail)
     else
       @dose = Dose.new
-      render "cocktails/show"
+      render 'cocktails/show'
     end
   end
 

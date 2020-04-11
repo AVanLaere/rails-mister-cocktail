@@ -46,10 +46,10 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'autoprefixer-rails'
+gem 'cloudinary', '~> 1.12.0'
+gem 'dotenv-rails', groups: %i[development test]
 gem 'font-awesome-sass', '~> 5.12.0'
 gem 'rails-controller-testing', group: [:test]
 gem 'rspec-rails', '4.0.0.beta3', group: [:test]
 gem 'simple_form'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
-gem 'dotenv-rails', groups: [:development, :test]
-gem 'cloudinary', '~> 1.12.0'
